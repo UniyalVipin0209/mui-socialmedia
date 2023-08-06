@@ -25,7 +25,7 @@ const UserBox = styled(Box)(({ theme }) => ({
   alignItems: "center",
   display: "flex",
   flexDirection: "row",
-  gap: "8px",
+  gap: "16px",
   [theme.breakpoints.up("sm")]: {
     display: "none",
     flexDirection: "row",

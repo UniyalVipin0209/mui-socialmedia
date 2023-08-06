@@ -11,7 +11,7 @@ const Homepage = () => {
   return (
     <ThemeProvider theme={currentTheme}>
       <Box bgcolor={"background.default"} color={"text.primary"}>
-        <Header />
+        <Header setMode={setMode} mode={mode} />
         <Stack direction="row" spacing={1} justifyContent="space-between">
           <Sidebar setMode={setMode} mode={mode} />
           <Feed />

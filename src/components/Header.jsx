@@ -7,6 +7,7 @@ import {
   Avatar,
   Menu,
   MenuItem,
+  Switch,
 } from "@mui/material";
 import React, { useState } from "react";
 import {
@@ -43,6 +44,9 @@ const Header = ({ mode, setMode }) => {
           />
         </IconBox>
         <UserBox onClick={(e) => SetOpen(true)}>
+          <Switch
+            onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
+          />
           <Avatar
             onClick={(e) => SetOpen(true)}
             sx={{ width: 25, height: 25 }}
